@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2e6a051c0c4e4df898a62f01a38d5549" Name="Diagram1">
+        <EntityTypeShape EntityType="PBL3_demoModel.AccessRight" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Account" Width="1.5" PointX="8" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Batch" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Customer" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Invoice" Width="1.5" PointX="7.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Parcel" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Receptionist" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.ShippingFee" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.Warehouse" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.WarehouseManager" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL3_demoModel.WarehouseStaff" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Account_AccessRight" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Batch_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Batch_Warehouse1" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Parcel_Batch" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Invoice_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Parcel_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Invoice_Parcel" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_Parcel_ShippingFee" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_WarehouseManager_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL3_demoModel.FK_WarehouseStaff_Warehouse" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,137 @@
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Demo1.pdb
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\MaterialDesignColors.pdb
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\DELL\source\repos\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\App.g.cs
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1_MarkupCompile.cache
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1_MarkupCompile.lref
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\App.baml
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\MainWindow.baml
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.g.resources
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.Properties.Resources.resources
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.exe
+C:\Users\DELL\source\repos\Demo1\Demo1\obj\Debug\Demo1.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Demo1.exe
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Demo1.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\MaterialDesignColors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\App.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1_MarkupCompile.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1_MarkupCompile.lref
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\App.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\MainWindow.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.g.resources
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.Properties.Resources.resources
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.csproj.GenerateResource.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.exe
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\LoginWindow.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\LoginWindow.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Main.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Demo1_Content.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\obj\Debug\Main.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Memory.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Memory.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Demo1.exe
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Demo1.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\MaterialDesignColors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Memory.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Memory.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\LoginWindow.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\App.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1_Content.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1_MarkupCompile.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1_MarkupCompile.lref
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\App.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\LoginWindow.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\MainWindow.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.g.resources
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.Properties.Resources.resources
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.csproj.GenerateResource.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.exe
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Demo1.pdb
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Styles\ButtonStyles.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\Styles\UIColors.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddParcelView.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddRCView.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddSCView.g.cs
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddParcelView.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddRCView.baml
+C:\Users\ASUS\Documents\Zalo Received Files\Demo1\Demo1 (1)\Demo1\obj\Debug\AddSCView.baml

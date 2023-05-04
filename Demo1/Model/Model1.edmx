@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PBL3_demoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccessRight">
+          <Key>
+            <PropertyRef Name="accessRightID" />
+          </Key>
+          <Property Name="accessRightID" Type="int" Nullable="false" />
+          <Property Name="accessRightName" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="accountName" />
+          </Key>
+          <Property Name="accountName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="accountPassword" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="accessRightID" Type="int" Nullable="false" />
+          <Property Name="Salt" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Batch">
+          <Key>
+            <PropertyRef Name="batchID" />
+          </Key>
+          <Property Name="batchID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="receivingWarehouseID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="sendingWarehouseID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="batchStatus" Type="bit" Nullable="false" />
+          <Property Name="quantity" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="customerID" />
+          </Key>
+          <Property Name="customerID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="customerName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="customerLocation" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="customerPhoneNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="int" Nullable="false" />
+          <Property Name="parcelID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="customerID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="cost" Type="float" Nullable="false" />
+          <Property Name="outputTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Parcel">
+          <Key>
+            <PropertyRef Name="parcelID" />
+          </Key>
+          <Property Name="parcelID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="parcelName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="parcelValue" Type="float" />
+          <Property Name="parcelStatus" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="parcelMass" Type="float" Nullable="false" />
+          <Property Name="parcelSize" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="customerID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="type" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="createTime" Type="datetime" Nullable="false" />
+          <Property Name="shippingFeeID" Type="int" Nullable="false" />
+          <Property Name="batchID" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Receptionist">
+          <Key>
+            <PropertyRef Name="receptionistID" />
+          </Key>
+          <Property Name="receptionistID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="receptionistName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="receptionistLocation" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="receptionistPhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShippingFee">
+          <Key>
+            <PropertyRef Name="shippingFeeID" />
+          </Key>
+          <Property Name="shippingFeeID" Type="int" Nullable="false" />
+          <Property Name="locations" Type="float" Nullable="false" />
+          <Property Name="shippingMethods" Type="bit" Nullable="false" />
+          <Property Name="parcelID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="totalCost" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Warehouse">
+          <Key>
+            <PropertyRef Name="warehouseID" />
+          </Key>
+          <Property Name="warehouseID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseAddress" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="capacity" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WarehouseManager">
+          <Key>
+            <PropertyRef Name="warehouseManagerID" />
+          </Key>
+          <Property Name="warehouseManagerID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseManagerName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseManagerLocation" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseManagerPhoneNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="numberOfEmployee" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WarehouseStaff">
+          <Key>
+            <PropertyRef Name="warehouseStaffID" />
+          </Key>
+          <Property Name="warehouseStaffID" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseStaffName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseStaffLocation" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseStaffPhoneNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="warehouseID" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Account_AccessRight">
+          <End Role="AccessRight" Type="Self.AccessRight" Multiplicity="1" />
+          <End Role="Account" Type="Self.Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AccessRight">
+              <PropertyRef Name="accessRightID" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="accessRightID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Batch_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="Batch" Type="Self.Batch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="Batch">
+              <PropertyRef Name="receivingWarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Batch_Warehouse1">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="Batch" Type="Self.Batch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="Batch">
+              <PropertyRef Name="sendingWarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Invoice_Customer">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+          <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="customerID" />
+            </Principal>
+            <Dependent Role="Invoice">
+              <PropertyRef Name="customerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Invoice_Parcel">
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="1" />
+          <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parcel">
+              <PropertyRef Name="parcelID" />
+            </Principal>
+            <Dependent Role="Invoice">
+              <PropertyRef Name="parcelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_Batch">
+          <End Role="Batch" Type="Self.Batch" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Batch">
+              <PropertyRef Name="batchID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="batchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_Customer">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="customerID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="customerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_ShippingFee">
+          <End Role="ShippingFee" Type="Self.ShippingFee" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingFee">
+              <PropertyRef Name="shippingFeeID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="shippingFeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WarehouseManager_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="WarehouseManager" Type="Self.WarehouseManager" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="WarehouseManager">
+              <PropertyRef Name="warehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WarehouseStaff_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="WarehouseStaff" Type="Self.WarehouseStaff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="WarehouseStaff">
+              <PropertyRef Name="warehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PBL3_demoModelStoreContainer">
+          <EntitySet Name="AccessRight" EntityType="Self.AccessRight" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Batch" EntityType="Self.Batch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parcel" EntityType="Self.Parcel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Receptionist" EntityType="Self.Receptionist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShippingFee" EntityType="Self.ShippingFee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Warehouse" EntityType="Self.Warehouse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WarehouseManager" EntityType="Self.WarehouseManager" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WarehouseStaff" EntityType="Self.WarehouseStaff" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Account_AccessRight" Association="Self.FK_Account_AccessRight">
+            <End Role="AccessRight" EntitySet="AccessRight" />
+            <End Role="Account" EntitySet="Account" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Batch_Warehouse" Association="Self.FK_Batch_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="Batch" EntitySet="Batch" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Batch_Warehouse1" Association="Self.FK_Batch_Warehouse1">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="Batch" EntitySet="Batch" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Invoice_Customer" Association="Self.FK_Invoice_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Invoice" EntitySet="Invoice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Invoice_Parcel" Association="Self.FK_Invoice_Parcel">
+            <End Role="Parcel" EntitySet="Parcel" />
+            <End Role="Invoice" EntitySet="Invoice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_Batch" Association="Self.FK_Parcel_Batch">
+            <End Role="Batch" EntitySet="Batch" />
+            <End Role="Parcel" EntitySet="Parcel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_Customer" Association="Self.FK_Parcel_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Parcel" EntitySet="Parcel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_ShippingFee" Association="Self.FK_Parcel_ShippingFee">
+            <End Role="ShippingFee" EntitySet="ShippingFee" />
+            <End Role="Parcel" EntitySet="Parcel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WarehouseManager_Warehouse" Association="Self.FK_WarehouseManager_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="WarehouseManager" EntitySet="WarehouseManager" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WarehouseStaff_Warehouse" Association="Self.FK_WarehouseStaff_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouse" />
+            <End Role="WarehouseStaff" EntitySet="WarehouseStaff" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PBL3_demoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AccessRight">
+          <Key>
+            <PropertyRef Name="accessRightID" />
+          </Key>
+          <Property Name="accessRightID" Type="Int32" Nullable="false" />
+          <Property Name="accessRightName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Accounts" Relationship="Self.FK_Account_AccessRight" FromRole="AccessRight" ToRole="Account" />
+        </EntityType>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="accountName" />
+          </Key>
+          <Property Name="accountName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="accountPassword" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="accessRightID" Type="Int32" Nullable="false" />
+          <Property Name="Salt" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AccessRight" Relationship="Self.FK_Account_AccessRight" FromRole="Account" ToRole="AccessRight" />
+        </EntityType>
+        <EntityType Name="Batch">
+          <Key>
+            <PropertyRef Name="batchID" />
+          </Key>
+          <Property Name="batchID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="receivingWarehouseID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sendingWarehouseID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="batchStatus" Type="Boolean" Nullable="false" />
+          <Property Name="quantity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Warehouse" Relationship="Self.FK_Batch_Warehouse" FromRole="Batch" ToRole="Warehouse" />
+          <NavigationProperty Name="Warehouse1" Relationship="Self.FK_Batch_Warehouse1" FromRole="Batch" ToRole="Warehouse" />
+          <NavigationProperty Name="Parcels" Relationship="Self.FK_Parcel_Batch" FromRole="Batch" ToRole="Parcel" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="customerID" />
+          </Key>
+          <Property Name="customerID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="customerName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="customerLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="customerPhoneNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoice_Customer" FromRole="Customer" ToRole="Invoice" />
+          <NavigationProperty Name="Parcels" Relationship="Self.FK_Parcel_Customer" FromRole="Customer" ToRole="Parcel" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="invoiceID" />
+          </Key>
+          <Property Name="invoiceID" Type="Int32" Nullable="false" />
+          <Property Name="parcelID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="customerID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cost" Type="Double" Nullable="false" />
+          <Property Name="outputTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Customer" Relationship="Self.FK_Invoice_Customer" FromRole="Invoice" ToRole="Customer" />
+          <NavigationProperty Name="Parcel" Relationship="Self.FK_Invoice_Parcel" FromRole="Invoice" ToRole="Parcel" />
+        </EntityType>
+        <EntityType Name="Parcel">
+          <Key>
+            <PropertyRef Name="parcelID" />
+          </Key>
+          <Property Name="parcelID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="parcelName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="parcelValue" Type="Double" />
+          <Property Name="parcelStatus" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="parcelMass" Type="Double" Nullable="false" />
+          <Property Name="parcelSize" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="customerID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="shippingFeeID" Type="Int32" Nullable="false" />
+          <Property Name="batchID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Batch" Relationship="Self.FK_Parcel_Batch" FromRole="Parcel" ToRole="Batch" />
+          <NavigationProperty Name="Customer" Relationship="Self.FK_Parcel_Customer" FromRole="Parcel" ToRole="Customer" />
+          <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoice_Parcel" FromRole="Parcel" ToRole="Invoice" />
+          <NavigationProperty Name="ShippingFee" Relationship="Self.FK_Parcel_ShippingFee" FromRole="Parcel" ToRole="ShippingFee" />
+        </EntityType>
+        <EntityType Name="Receptionist">
+          <Key>
+            <PropertyRef Name="receptionistID" />
+          </Key>
+          <Property Name="receptionistID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="receptionistName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="receptionistLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="receptionistPhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShippingFee">
+          <Key>
+            <PropertyRef Name="shippingFeeID" />
+          </Key>
+          <Property Name="shippingFeeID" Type="Int32" Nullable="false" />
+          <Property Name="locations" Type="Double" Nullable="false" />
+          <Property Name="shippingMethods" Type="Boolean" Nullable="false" />
+          <Property Name="parcelID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="totalCost" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Parcels" Relationship="Self.FK_Parcel_ShippingFee" FromRole="ShippingFee" ToRole="Parcel" />
+        </EntityType>
+        <EntityType Name="Warehouse">
+          <Key>
+            <PropertyRef Name="warehouseID" />
+          </Key>
+          <Property Name="warehouseID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="capacity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Batches" Relationship="Self.FK_Batch_Warehouse" FromRole="Warehouse" ToRole="Batch" />
+          <NavigationProperty Name="Batches1" Relationship="Self.FK_Batch_Warehouse1" FromRole="Warehouse" ToRole="Batch" />
+          <NavigationProperty Name="WarehouseManagers" Relationship="Self.FK_WarehouseManager_Warehouse" FromRole="Warehouse" ToRole="WarehouseManager" />
+          <NavigationProperty Name="WarehouseStaffs" Relationship="Self.FK_WarehouseStaff_Warehouse" FromRole="Warehouse" ToRole="WarehouseStaff" />
+        </EntityType>
+        <EntityType Name="WarehouseManager">
+          <Key>
+            <PropertyRef Name="warehouseManagerID" />
+          </Key>
+          <Property Name="warehouseManagerID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseManagerName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseManagerLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseManagerPhoneNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="numberOfEmployee" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Warehouse" Relationship="Self.FK_WarehouseManager_Warehouse" FromRole="WarehouseManager" ToRole="Warehouse" />
+        </EntityType>
+        <EntityType Name="WarehouseStaff">
+          <Key>
+            <PropertyRef Name="warehouseStaffID" />
+          </Key>
+          <Property Name="warehouseStaffID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseStaffName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseStaffLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseStaffPhoneNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="warehouseID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Warehouse" Relationship="Self.FK_WarehouseStaff_Warehouse" FromRole="WarehouseStaff" ToRole="Warehouse" />
+        </EntityType>
+        <Association Name="FK_Account_AccessRight">
+          <End Role="AccessRight" Type="Self.AccessRight" Multiplicity="1" />
+          <End Role="Account" Type="Self.Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AccessRight">
+              <PropertyRef Name="accessRightID" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="accessRightID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Batch_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="Batch" Type="Self.Batch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="Batch">
+              <PropertyRef Name="receivingWarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Batch_Warehouse1">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="Batch" Type="Self.Batch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="Batch">
+              <PropertyRef Name="sendingWarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_Batch">
+          <End Role="Batch" Type="Self.Batch" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Batch">
+              <PropertyRef Name="batchID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="batchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Invoice_Customer">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+          <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="customerID" />
+            </Principal>
+            <Dependent Role="Invoice">
+              <PropertyRef Name="customerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_Customer">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="customerID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="customerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Invoice_Parcel">
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="1" />
+          <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parcel">
+              <PropertyRef Name="parcelID" />
+            </Principal>
+            <Dependent Role="Invoice">
+              <PropertyRef Name="parcelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Parcel_ShippingFee">
+          <End Role="ShippingFee" Type="Self.ShippingFee" Multiplicity="1" />
+          <End Role="Parcel" Type="Self.Parcel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingFee">
+              <PropertyRef Name="shippingFeeID" />
+            </Principal>
+            <Dependent Role="Parcel">
+              <PropertyRef Name="shippingFeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WarehouseManager_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="WarehouseManager" Type="Self.WarehouseManager" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="WarehouseManager">
+              <PropertyRef Name="warehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WarehouseStaff_Warehouse">
+          <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="1" />
+          <End Role="WarehouseStaff" Type="Self.WarehouseStaff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warehouse">
+              <PropertyRef Name="warehouseID" />
+            </Principal>
+            <Dependent Role="WarehouseStaff">
+              <PropertyRef Name="warehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PBL3_demoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccessRights" EntityType="Self.AccessRight" />
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="Batches" EntityType="Self.Batch" />
+          <EntitySet Name="Customers" EntityType="Self.Customer" />
+          <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+          <EntitySet Name="Parcels" EntityType="Self.Parcel" />
+          <EntitySet Name="Receptionists" EntityType="Self.Receptionist" />
+          <EntitySet Name="ShippingFees" EntityType="Self.ShippingFee" />
+          <EntitySet Name="Warehouses" EntityType="Self.Warehouse" />
+          <EntitySet Name="WarehouseManagers" EntityType="Self.WarehouseManager" />
+          <EntitySet Name="WarehouseStaffs" EntityType="Self.WarehouseStaff" />
+          <AssociationSet Name="FK_Account_AccessRight" Association="Self.FK_Account_AccessRight">
+            <End Role="AccessRight" EntitySet="AccessRights" />
+            <End Role="Account" EntitySet="Accounts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Batch_Warehouse" Association="Self.FK_Batch_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouses" />
+            <End Role="Batch" EntitySet="Batches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Batch_Warehouse1" Association="Self.FK_Batch_Warehouse1">
+            <End Role="Warehouse" EntitySet="Warehouses" />
+            <End Role="Batch" EntitySet="Batches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_Batch" Association="Self.FK_Parcel_Batch">
+            <End Role="Batch" EntitySet="Batches" />
+            <End Role="Parcel" EntitySet="Parcels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Invoice_Customer" Association="Self.FK_Invoice_Customer">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Invoice" EntitySet="Invoices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_Customer" Association="Self.FK_Parcel_Customer">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Parcel" EntitySet="Parcels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Invoice_Parcel" Association="Self.FK_Invoice_Parcel">
+            <End Role="Parcel" EntitySet="Parcels" />
+            <End Role="Invoice" EntitySet="Invoices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Parcel_ShippingFee" Association="Self.FK_Parcel_ShippingFee">
+            <End Role="ShippingFee" EntitySet="ShippingFees" />
+            <End Role="Parcel" EntitySet="Parcels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WarehouseManager_Warehouse" Association="Self.FK_WarehouseManager_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouses" />
+            <End Role="WarehouseManager" EntitySet="WarehouseManagers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WarehouseStaff_Warehouse" Association="Self.FK_WarehouseStaff_Warehouse">
+            <End Role="Warehouse" EntitySet="Warehouses" />
+            <End Role="WarehouseStaff" EntitySet="WarehouseStaffs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PBL3_demoModelStoreContainer" CdmEntityContainer="PBL3_demoEntities">
+          <EntitySetMapping Name="AccessRights">
+            <EntityTypeMapping TypeName="PBL3_demoModel.AccessRight">
+              <MappingFragment StoreEntitySet="AccessRight">
+                <ScalarProperty Name="accessRightID" ColumnName="accessRightID" />
+                <ScalarProperty Name="accessRightName" ColumnName="accessRightName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Account">
+              <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="accountName" ColumnName="accountName" />
+                <ScalarProperty Name="accountPassword" ColumnName="accountPassword" />
+                <ScalarProperty Name="accessRightID" ColumnName="accessRightID" />
+                <ScalarProperty Name="Salt" ColumnName="Salt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Batches">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Batch">
+              <MappingFragment StoreEntitySet="Batch">
+                <ScalarProperty Name="batchID" ColumnName="batchID" />
+                <ScalarProperty Name="receivingWarehouseID" ColumnName="receivingWarehouseID" />
+                <ScalarProperty Name="sendingWarehouseID" ColumnName="sendingWarehouseID" />
+                <ScalarProperty Name="batchStatus" ColumnName="batchStatus" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="customerID" ColumnName="customerID" />
+                <ScalarProperty Name="customerName" ColumnName="customerName" />
+                <ScalarProperty Name="customerLocation" ColumnName="customerLocation" />
+                <ScalarProperty Name="customerPhoneNumber" ColumnName="customerPhoneNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Invoices">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Invoice">
+              <MappingFragment StoreEntitySet="Invoice">
+                <ScalarProperty Name="invoiceID" ColumnName="invoiceID" />
+                <ScalarProperty Name="parcelID" ColumnName="parcelID" />
+                <ScalarProperty Name="customerID" ColumnName="customerID" />
+                <ScalarProperty Name="cost" ColumnName="cost" />
+                <ScalarProperty Name="outputTime" ColumnName="outputTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parcels">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Parcel">
+              <MappingFragment StoreEntitySet="Parcel">
+                <ScalarProperty Name="parcelID" ColumnName="parcelID" />
+                <ScalarProperty Name="parcelName" ColumnName="parcelName" />
+                <ScalarProperty Name="parcelValue" ColumnName="parcelValue" />
+                <ScalarProperty Name="parcelStatus" ColumnName="parcelStatus" />
+                <ScalarProperty Name="parcelMass" ColumnName="parcelMass" />
+                <ScalarProperty Name="parcelSize" ColumnName="parcelSize" />
+                <ScalarProperty Name="customerID" ColumnName="customerID" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="createTime" ColumnName="createTime" />
+                <ScalarProperty Name="shippingFeeID" ColumnName="shippingFeeID" />
+                <ScalarProperty Name="batchID" ColumnName="batchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Receptionists">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Receptionist">
+              <MappingFragment StoreEntitySet="Receptionist">
+                <ScalarProperty Name="receptionistID" ColumnName="receptionistID" />
+                <ScalarProperty Name="receptionistName" ColumnName="receptionistName" />
+                <ScalarProperty Name="receptionistLocation" ColumnName="receptionistLocation" />
+                <ScalarProperty Name="receptionistPhoneNumber" ColumnName="receptionistPhoneNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShippingFees">
+            <EntityTypeMapping TypeName="PBL3_demoModel.ShippingFee">
+              <MappingFragment StoreEntitySet="ShippingFee">
+                <ScalarProperty Name="shippingFeeID" ColumnName="shippingFeeID" />
+                <ScalarProperty Name="locations" ColumnName="locations" />
+                <ScalarProperty Name="shippingMethods" ColumnName="shippingMethods" />
+                <ScalarProperty Name="parcelID" ColumnName="parcelID" />
+                <ScalarProperty Name="totalCost" ColumnName="totalCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Warehouses">
+            <EntityTypeMapping TypeName="PBL3_demoModel.Warehouse">
+              <MappingFragment StoreEntitySet="Warehouse">
+                <ScalarProperty Name="warehouseID" ColumnName="warehouseID" />
+                <ScalarProperty Name="warehouseName" ColumnName="warehouseName" />
+                <ScalarProperty Name="warehouseAddress" ColumnName="warehouseAddress" />
+                <ScalarProperty Name="capacity" ColumnName="capacity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WarehouseManagers">
+            <EntityTypeMapping TypeName="PBL3_demoModel.WarehouseManager">
+              <MappingFragment StoreEntitySet="WarehouseManager">
+                <ScalarProperty Name="warehouseManagerID" ColumnName="warehouseManagerID" />
+                <ScalarProperty Name="warehouseManagerName" ColumnName="warehouseManagerName" />
+                <ScalarProperty Name="warehouseManagerLocation" ColumnName="warehouseManagerLocation" />
+                <ScalarProperty Name="warehouseManagerPhoneNumber" ColumnName="warehouseManagerPhoneNumber" />
+                <ScalarProperty Name="warehouseID" ColumnName="warehouseID" />
+                <ScalarProperty Name="numberOfEmployee" ColumnName="numberOfEmployee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WarehouseStaffs">
+            <EntityTypeMapping TypeName="PBL3_demoModel.WarehouseStaff">
+              <MappingFragment StoreEntitySet="WarehouseStaff">
+                <ScalarProperty Name="warehouseStaffID" ColumnName="warehouseStaffID" />
+                <ScalarProperty Name="warehouseStaffName" ColumnName="warehouseStaffName" />
+                <ScalarProperty Name="warehouseStaffLocation" ColumnName="warehouseStaffLocation" />
+                <ScalarProperty Name="warehouseStaffPhoneNumber" ColumnName="warehouseStaffPhoneNumber" />
+                <ScalarProperty Name="warehouseID" ColumnName="warehouseID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
