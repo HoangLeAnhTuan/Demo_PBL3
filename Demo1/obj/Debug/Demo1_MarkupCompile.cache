@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Demo_PBL3\Demo1\obj\Debug\
+C:\TestPBL3\Demo1\obj\Debug\
 Demo1
 none
 false
 DEBUG;TRACE
-C:\Demo_PBL3\Demo1\App.xaml
+C:\TestPBL3\Demo1\App.xaml
 8-1753719896
 2-1556844510
 31687951757
-31-629646187
+312106719508
 AddParcelView.xaml;AddRCView.xaml;AddSCView.xaml;LoginWindow.xaml;MainWindow.xaml;ResourceXAML\MainResource.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;
 
 True
