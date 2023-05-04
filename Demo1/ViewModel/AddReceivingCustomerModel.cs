@@ -135,7 +135,7 @@ namespace Demo1.ViewModel
                 }
                 
             });
-            ShowAnotherControl =new RelayCommand<object>((p)=> { return true; },(p)=> { CurrentChildView = new AddSendingCustomerModel(); });
+            //ShowAnotherControl =new RelayCommand<object>((p)=> { return true; },(p)=> { CurrentChildView = new AddSendingCustomerModel(); });
         }
     }
 }
